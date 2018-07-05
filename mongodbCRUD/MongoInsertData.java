@@ -10,7 +10,6 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
 public class MongoInsertData {
-
 	public static void main(String[] args) {
 		// to connect with mongodb
 		MongoClient client = new MongoClient("localhost", 27017);

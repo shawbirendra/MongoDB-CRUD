@@ -4,7 +4,6 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 
 public class MongodbCreateCollection {
-
 	public static void main(String[] args) {
 		MongoClient mongoClient = new MongoClient("localhost", 27017);
 		// get access to database

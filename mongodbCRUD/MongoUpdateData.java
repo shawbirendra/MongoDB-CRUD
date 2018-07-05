@@ -13,12 +13,11 @@ import com.mongodb.client.model.Updates;
 import com.mongodb.client.result.UpdateResult;
 
 public class MongoUpdateData {
-
 	public static void main(String[] args) {
 		MongoClient client = new MongoClient("localhost", 27017);
 		MongoDatabase database = client.getDatabase("test");
 		MongoCollection<Document> collection = database.getCollection("Employee");
-		
+
 		// updating the details...
 		UpdateResult res = collection.updateOne(Filters.eq("id", "500"), Updates.set("name", "divya"));
 		System.out.println("Result::" + res.getMatchedCount());
